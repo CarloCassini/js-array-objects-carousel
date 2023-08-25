@@ -27,7 +27,7 @@ Al click dell'utente sulle frecce verso sinistra o destra, l'immagine attiva div
 - do degli ID all'immagine attiva + ai bottoni avanti e indietro
 
 - al caricamento della pagina:
-  - inserisco la prima immagine dell'array nello spazio di immagine attiva
+  - inserisco la prima immagine dell'array nello spazio di immagine attiva (fatto)
     -inserisco gli altri dati dell'oggetto dell'array in uno spazio che creerò ad hoc
 - aggiungo event listener sui bottoni
   - al click del bottone avanti:
