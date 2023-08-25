@@ -29,6 +29,8 @@ const images = [
 ];
 
 let imgAttiva = document.getElementById("img-attiva");
+let imgTitle = document.getElementById("titolo-img-attiva");
+let imgText = document.getElementById("paragrafo-img-attiva");
 // prendo i bottoni avanti e indietro
 const bttAvanti = document.getElementById("avanti");
 const bttIndietro = document.getElementById("indietro");
@@ -37,6 +39,8 @@ let indexArray = 0;
 
 //all'inizializzazione della pagina inserisco la prima immagine dell'array
 imgAttiva.setAttribute("src", images[indexArray].image);
+imgTitle.innerHTML = images[indexArray].title;
+imgText.innerHTML = images[indexArray].text;
 
 // aggiungo le azioni al click dell'evento:
 // avanti
@@ -47,6 +51,8 @@ bttAvanti.addEventListener("click", () => {
     indexArray = 0;
   }
   imgAttiva.setAttribute("src", images[indexArray].image);
+  imgTitle.innerHTML = images[indexArray].title;
+  imgText.innerHTML = images[indexArray].text;
 
   console.log(indexArray);
 });
@@ -61,4 +67,6 @@ bttIndietro.addEventListener("click", () => {
   }
   console.log(indexArray);
   imgAttiva.setAttribute("src", images[indexArray].image);
+  imgTitle.innerHTML = images[indexArray].title;
+  imgText.innerHTML = images[indexArray].text;
 });
