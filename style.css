@@ -21,7 +21,7 @@
   right: 0;
 }
 
-.carousel-zone {
+.carousel-zone:first-child {
   position: relative;
   color: white;
   height: 600px;
