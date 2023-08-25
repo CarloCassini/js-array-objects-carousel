@@ -16,7 +16,7 @@ Consiglio: gestite bene il tempo. si può sempre tornare in seguito a migliorare
 
 - creo la struttura del carosello in maniera molto spartana. immagino gli spazi dove inserirò le cose in un secondo momento.
 
-## Milestone 1:
+## Milestone 1: (fatto)
 
 Ora rimuoviamo i contenuti statici e usiamo l'array di oggetti letterali per popolare dinamicamente il carosello.
 Al click dell'utente sulle frecce verso sinistra o destra, l'immagine attiva diventerà visibile e dovremo aggiungervi titolo e testo.
@@ -33,7 +33,7 @@ Al click dell'utente sulle frecce verso sinistra o destra, l'immagine attiva div
   - al click del bottone avanti:
   - sostituisco l'immagine attiva con quella immediatamente successiva dell'array e così anche il testo
 
-## Milestone 2:
+## Milestone 2: (fatto)
 
 Aggiungere il ciclo infinito del carosello. Ovvero se la miniatura attiva è la prima e l'utente clicca la freccia verso destra, la miniatura che deve attivarsi sarà l'ultima e viceversa per l'ultima miniatura se l'utente clicca la freccia verso sinistra.
 
