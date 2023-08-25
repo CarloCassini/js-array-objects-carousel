@@ -7,10 +7,14 @@ Dato un array di oggetti letterali con:
 - descrizione
   Creare un carosello come nella foto allegata.
 
-## Milestone 0:
+## Milestone 0: (fatto)
 
 Come nel primo carosello realizzato, focalizziamoci prima sulla creazione del markup statico: costruiamo il container e inseriamo l'immagine grande in modo da poter stilare lo slider.
 Consiglio: gestite bene il tempo. si può sempre tornare in seguito a migliorare la grafica, ma dedicargli molto tempo da subito può farvi rimanere indietro.
+
+### svolgimento:
+
+- creo la struttura del carosello in maniera molto spartana. immagino gli spazi dove inserirò le cose in un secondo momento.
 
 ## Milestone 1:
 
