@@ -29,7 +29,36 @@ const images = [
 ];
 
 let imgAttiva = document.getElementById("img-attiva");
+// prendo i bottoni avanti e indietro
+const bttAvanti = document.getElementById("avanti");
+const bttIndietro = document.getElementById("indietro");
+// salvo l'indice dell'array che viene mostrato
+let indexArray = 0;
 
 //all'inizializzazione della pagina inserisco la prima immagine dell'array
-imgAttiva.setAttribute("src", images[0].image);
-console.log(imgAttiva.getAttribute("src"));
+imgAttiva.setAttribute("src", images[indexArray].image);
+
+// aggiungo le azioni al click dell'evento:
+// avanti
+bttAvanti.addEventListener("click", () => {
+  indexArray += 1;
+  // condizione che controlla il ritorno all'oggetto iniziale
+  if (indexArray >= images.length) {
+    indexArray = 0;
+  }
+  imgAttiva.setAttribute("src", images[indexArray].image);
+
+  console.log(indexArray);
+});
+
+// indietro
+bttIndietro.addEventListener("click", () => {
+  // condizione che controlla il ritorno all'oggetto iniziale
+  indexArray -= 1;
+
+  if (indexArray < 0) {
+    indexArray = images.length - 1;
+  }
+  console.log(indexArray);
+  imgAttiva.setAttribute("src", images[indexArray].image);
+});
